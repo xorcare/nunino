@@ -1,0 +1,30 @@
+---
+linters:
+  disable-all: true
+  enable:
+    - errcheck
+    - godot
+    - gofumpt
+    - goimports
+    - gosimple
+    - govet
+    - ineffassign
+    - misspell
+    - staticcheck
+    - testifylint
+    - testpackage
+    - typecheck
+    - unused
+    - whitespace
+    - wsl
+
+linters-settings:
+  goimports:
+    local-prefixes: github.com/xorcare/nunino
+  gofumpt:
+    module-path: github.com/xorcare/nunino
+  unused:
+    field-writes-are-uses: false
+    post-statements-are-reads: true
+    exported-fields-are-used: false
+    local-variables-are-used: false
